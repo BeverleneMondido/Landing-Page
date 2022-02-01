@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  .title{
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  p{
+    text-align: justify;
+   opacity: 0.7;
+  }
+  body{
+background-image: url(  data:image/jpeg;base64,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);
+ background-attachment: fixed;
+  background-size: cover;
+  margin: 50px;  
+    margin-top: 30px;
+  }
+
+  @media {
+  } max-width: 200px;
+  
+   nav{
+    position: fixed;
+    top:0;
+    margin-top: 10px;
+    margin-left: 250px;
+    background-color: gray;
+    opacity: 0.4;
+   height: 40px;
+   border-style: inset;
+   float: center;
+   top: 0;
+     border-radius: 10px;
+     
+    
+  }
+  
+  li {
+  float: center;
+}
+
+a {
+  display: inline;
+  padding: 10px;
+  color: white;
+    
+}
+ .flex-container{
+  display: flex;
+  flex-direction: row;
+   color: black;
+   margin:0 auto;
+  
+}
+   .box{
+    margin:20px;
+    padding:20px;
+    background-color: white;
+     border-radius: 15px;
+     border-width:5px;
+     border-color: gray;
+     border-style: inset;
+     text-align: center;
+     
+  }
+   
+  
+ iframe{
+   margin-left: 220px;
+    
+  }
+  
+  input{
+        height:30px;
+        width: 250px;
+        border-radius: 15px;
+        margin:10px;
+        border-style:ridge;
+        border-color: white;
+        border-width: 5px;
+    }
+
+    textarea{
+        resize: none;
+         border-radius: 10px;
+         border-style:inset;
+         border-width: 5px;
+         border-color: gray;   
+      background-color:white;
+     
+    }
+  
+  .contactForm{
+    margin-left: 260px;
+ 
+  }
+  
+  .button-style{
+    margin-left: 150px;
+    border-radius: 10px;
+    border-style:inset;
+    padding: 5px 10px;
+    border-width:5px;
+    border-color: white;
+    background-color: gray;
+    color: white;
+     opacity: 1;
+  }
+ 
+  <!--CSS-->
+  
+#box1{
+   
+   height: 50%;
+   width:10%;
+   color: orange;
+  }
+  
+   #box2{
+    
+     height: 50%;
+   width:10%;
+     color:blue;
+}
+
+#header-img{
+ width: 50%;
+  margin-top: 50px;
+ margin-left: auto;
+  margin-right: auto;
+    display: block;
+  border-radius: 80%;
+  
+}
+
+#nav-bar{
+  opacity: 1;
+  font-family: Cambria;
+}
+
+</style>
+<header id="header">
+
+   <nav id="nav-bar">
+   <ul>
+   <a href=#Home class="nav-link">About Us<a/>
+   <a href=#Content class="nav-link">What we offer<a/>
+   <a href=#Contact class="nav-link">Contact Us<a/>
+      </ul>
+  </nav> 
+  <body>
+  <img id="header-img" class="logo" src="https://image.shutterstock.com/image-vector/dots-letter-c-logo-design-260nw-551769190.jpg" alt="avatar"> </img> 
+     <br><br>
+     <h1 class="title">Welcome to Creative Agency!</h1>
+     <p>Our company is seeking for talented, motivated and passionate individuals in the field of Software programming. If it's you, fill out the contact form below and send it to us! </p>
+  
+</header>
+
+  </body>
+     <section>
+    <h1 class="title" id=Home>About Us</h1>
+    <br>
+  <p>
+    Our company is a startup company founded by our CEO Beverlene Mondido who dreamed of sharing her knowledge and experience to other programmers around the Philippines. Our company aims to train individuals who wanted to shift in the field of Information Technology. We provide allowances, bootcamps and intensive training to equip our trainees. We aim to produce the best programmers with credibility and passion in their work to give our clients the best service.
+  </p><br>
+         </section>
+     
+     <section>
+     <h1  class="title" id=Content>What we offer</h1><br>
+<!--Video-->
+    <div>
+       <iframe  id="video" width="420" height="315"
+src="https://www.youtube.com/watch?v=pKBw98uHOyk" type="video/mp4">
+      </iframe></div>
+   <br>
+   <div class="flex-container">
+     <div class="box"><b>Offer 1</b><br>
+     <p>
+     <ul>
+       <li>Front-end programming</li>
+        <li>HTML,CSS, JavaScript,.NET,VS ReactJS,Angular </li>
+        <li>3 months intensive training</li>
+       <li>You'll be hired directly after the training</li>
+       <li>10% will be deducted from your monthly salary for 6 months </li>
+      
+     </ul>
+     </p>
+     </div>
+       <div class="box"><b>Offer 2</b><br>
+        <p>
+     <ul>
+       <li>Back-end programming</li>
+        <li>Python,Ruby,NodeJS,PHP,C#,Java,Pearl </li>
+        <li>3 months intensive training</li>
+       <li>You'll be hired directly after the training</li>
+       <li>10% will be deducted from your monthly salary for 6 months </li>
+     </ul>
+     </p>
+   </div>
+       </section>
+<hr>
+ <h1  class="title" id=Contact> Apply now!</h1>
+    <br>
+<!--name-->     
+  <form id="form" action="https://www.freecodecamp.com/email-submit" class="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Type your name here"></input><br>
+<!--email-->
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email" placeholder="Type your email here"></input></d>
+
+<div>
+  <label for="dropdown">Select offer:</label>
+        <select name="offer-options" id="dropdown" class="offer-list">
+            <option value="---">---</option>
+            <option value="Offer 1-Front-end programming">Offer 1-Front-end programming</option>
+            <option value="Offer 2-Back-end programming">Offer 2-Back-end programming</option>
+        </select>
+</div> <br><br>
+
+    <div><textarea rows="10" cols="45">Why do you want to join us?</textarea>
+    
+    </div>
+    
+<br> 
+  <button type="submit" id="submit" class="button-style">Submit</button>
+</form> 
+</div>
+
+
+ </html> 
+ 
