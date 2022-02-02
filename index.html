@@ -23,17 +23,18 @@ background-image: url(  data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEA
   } max-width: 200px;
   
    nav{
-    position: fixed;
-    top:0;
+    top: 0;
+    position: center;
     margin-top: 10px;
-    margin-left: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     background-color: gray;
     opacity: 0.4;
    height: 40px;
    border-style: inset;
-   float: center;
-   top: 0;
-     border-radius: 10px;
+   border-radius: 10px;
+   
      
     
   }
@@ -69,13 +70,15 @@ a {
    
   
  iframe{
-   margin-left: 220px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
     
   }
   
   input{
         height:30px;
-        width: 250px;
+        width: 300px;
         border-radius: 15px;
         margin:10px;
         border-style:ridge;
@@ -89,7 +92,10 @@ a {
          border-style:inset;
          border-width: 5px;
          border-color: gray;   
-      background-color:white;
+        background-color:white;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
      
     }
   
@@ -99,7 +105,10 @@ a {
   }
   
   .button-style{
-    margin-left: 150px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    display: grid;
     border-radius: 10px;
     border-style:inset;
     padding: 5px 10px;
@@ -108,6 +117,7 @@ a {
     background-color: gray;
     color: white;
      opacity: 1;
+
   }
  
   <!--CSS-->
@@ -127,18 +137,24 @@ a {
 }
 
 #header-img{
- width: 50%;
+ width: 30%;
   margin-top: 50px;
  margin-left: auto;
   margin-right: auto;
     display: block;
   border-radius: 80%;
+  border-style:inset;
+  border-color: white;
   
 }
-
 #nav-bar{
   opacity: 1;
   font-family: Cambria;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
 }
 
 </style>
@@ -152,9 +168,9 @@ a {
       </ul>
   </nav> 
   <body>
-  <img id="header-img" class="logo" src="https://image.shutterstock.com/image-vector/dots-letter-c-logo-design-260nw-551769190.jpg" alt="avatar"> </img> 
+  <img id="header-img" class="logo" src="https://web-dev.imgix.net/image/tcFciHGuF3MxnTr1y5ue01OGLBn2/vU99HKzIf5EUPnzGVPf1.png?auto=format&fit=max&w=1200&fm=auto" alt="avatar"> </img> 
      <br><br>
-     <h1 class="title">Welcome to Creative Agency!</h1>
+     <h1 class="title">Welcome to WebDev Agency!</h1>
      <p>Our company is seeking for talented, motivated and passionate individuals in the field of Software programming. If it's you, fill out the contact form below and send it to us! </p>
   
 </header>
@@ -205,7 +221,8 @@ src="https://www.youtube.com/watch?v=pKBw98uHOyk" type="video/mp4">
  <h1  class="title" id=Contact> Apply now!</h1>
     <br>
 <!--name-->     
-  <form id="form" action="https://www.freecodecamp.com/email-submit" class="contactForm">
+  <form id="form" action="https://www.freecodecamp.com/email-submit" >
+   <div class="contactForm">
     <label for="name">Name:</label>
     <input type="text" name="name" id="name" placeholder="Type your name here"></input><br>
 <!--email-->
@@ -220,13 +237,13 @@ src="https://www.youtube.com/watch?v=pKBw98uHOyk" type="video/mp4">
             <option value="Offer 2-Back-end programming">Offer 2-Back-end programming</option>
         </select>
 </div> <br><br>
-
-    <div><textarea rows="10" cols="45">Why do you want to join us?</textarea>
+</div>
+    <div><textarea rows="10" cols="48">Why do you want to join us?</textarea>
     
     </div>
     
 <br> 
-  <button type="submit" id="submit" class="button-style">Submit</button>
+  <button type="submit" id="submit" class="button-style" >Submit</button>
 </form> 
 </div>
 
